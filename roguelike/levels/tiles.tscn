@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/tileset_1bit.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.94543, 8.09133 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 7.84757
+
+[node name="tiles" type="Node2D"]
+
+[node name="tile01" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 16, 16 )
+region_filter_clip = true
+
+[node name="body" type="StaticBody2D" parent="tile01"]
+
+[node name="shape" type="CollisionShape2D" parent="tile01/body"]
+shape = SubResource( 1 )
+
+[node name="tile02" type="Sprite" parent="."]
+position = Vector2( 16, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 16, 0, 16, 16 )
+region_filter_clip = true
+
+[node name="body" type="StaticBody2D" parent="tile02"]
+
+[node name="shape" type="CollisionShape2D" parent="tile02/body"]
+shape = SubResource( 1 )
+
+[node name="tile03" type="Sprite" parent="."]
+position = Vector2( 32, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32, 0, 16, 16 )
+region_filter_clip = true
+
+[node name="body" type="StaticBody2D" parent="tile03"]
+
+[node name="shape" type="CollisionShape2D" parent="tile03/body"]
+shape = SubResource( 1 )
+
+[node name="tile04" type="Sprite" parent="."]
+position = Vector2( 48, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 112, 0, 16, 16 )
+region_filter_clip = true
+
+[node name="body" type="StaticBody2D" parent="tile04"]
+
+[node name="shape" type="CollisionShape2D" parent="tile04/body"]
+shape = SubResource( 2 )
+
+[node name="tile05" type="Sprite" parent="."]
+position = Vector2( 64, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 96, 0, 16, 16 )
+region_filter_clip = true

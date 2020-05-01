@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/tileset_1bit.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 25.9571
+
+[node name="ball" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="sprite" type="Sprite" parent="."]
+position = Vector2( -0.146908, 0.440733 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 32.4007, 112.478, 15.5993, 15.55 )
+
+[node name="shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )

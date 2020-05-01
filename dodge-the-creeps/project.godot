@@ -15,9 +15,14 @@ _global_script_class_icons={
 
 [application]
 
-config/name="menu"
-run/main_scene="res://Panel.tscn"
+config/name="dodge the creeps"
+run/main_scene="res://Player.tscn"
 config/icon="res://icon.png"
+
+[display]
+
+window/size/width=480
+window/size/height=720
 
 [rendering]
 
