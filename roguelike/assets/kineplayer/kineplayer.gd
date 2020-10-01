@@ -21,4 +21,3 @@ func _physics_process(delta):
 		$sprite.animation = "right"
 	motion += motion.normalized() * delta * speed
 	move_and_slide(motion)
-	OS.execute()
